@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learn/tic_tac_toe/tic_tac_toe.dart';
+import 'package:flutter_learn/Counter/counter.dart';
 
-void main() {
-  runApp(TicTacToeApp());
-}
+void main() => runApp(CounterApp());

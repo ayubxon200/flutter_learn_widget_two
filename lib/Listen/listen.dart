@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
-import 'homeScreen.dart';
+import 'HomeScreen/home_screen.dart';
 
-class FitnessApp extends StatelessWidget {
-  const FitnessApp({super.key});
+
+class ListenApp extends StatelessWidget {
+  const ListenApp({super.key});
 
   @override
   Widget build(BuildContext context) {
