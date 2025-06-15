@@ -32,6 +32,8 @@ dependencies:
     sdk: flutter
   math_expressions: ^2.2.0
   eva_icons_flutter: ^3.1.0
+  flag: ^7.0.0
+
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -59,3 +61,5 @@ flutter:
     - assets/images/image_for_task_one.jpg
     - assets/images/image_two.jpg
     - assets/graphics/
+    - assets/images/widget_iv_images/
+    - assets/images/instagram_posts_images/
