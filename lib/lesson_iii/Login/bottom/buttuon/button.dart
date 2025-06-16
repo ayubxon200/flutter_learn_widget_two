@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learn/Login/bottom/Text/text.dart';
+
+import '../Text/text.dart';
 
 class ButtonApp extends StatelessWidget {
   final Color backgroundColor;

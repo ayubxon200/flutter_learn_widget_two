@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learn/book_junction/development/helper/book_detail_page.dart';
+import 'book_detail_page.dart';
 
 class VerticalImages extends StatefulWidget {
   final String url;

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learn/book_junction/development/buttons/search_button.dart';
-import 'package:flutter_learn/book_junction/development/helper/horizontal_list.dart';
-import 'package:flutter_learn/book_junction/development/helper/tittle.dart';
-import 'package:flutter_learn/book_junction/development/helper/vertical_images.dart';
+
+import 'development/buttons/search_button.dart';
+import 'development/helper/horizontal_list.dart';
+import 'development/helper/tittle.dart';
+import 'development/helper/vertical_images.dart';
+
 
 class BookJunction extends StatefulWidget {
   const BookJunction({super.key});
@@ -47,7 +49,7 @@ class _BookJunctionState extends State<BookJunction> {
             children: [
               Align(
                 alignment: Alignment.topCenter,
-                child: SearchButton(url: "assets/images/widget_iv_images/horizontal_image_one.png",),
+                child: SearchButton(),
               ),
           
               // Title All, Romance, Sci-Fi, Fantasy, Classics

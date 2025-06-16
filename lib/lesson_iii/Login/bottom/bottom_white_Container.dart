@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learn/Instagram/textField/textField.dart';
-import 'package:flutter_learn/Login/bottom/Text/text.dart';
-import 'package:flutter_learn/Login/bottom/buttuon/button.dart';
+import 'package:flutter_learn/lesson_iii/Login/bottom/buttuon/button.dart';
+
+import '../../Instagram/textField/textField.dart';
+import 'Text/text.dart';
+
 
 class BottomWhiteContainer extends StatelessWidget {
   const BottomWhiteContainer({super.key});

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learn/Calendar/color.dart';
+
+import '../../color.dart';
+
 
 class CalendarText extends StatelessWidget {
   final String text;

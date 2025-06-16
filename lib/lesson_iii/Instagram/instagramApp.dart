@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learn/Instagram/sizedBox/sizedBox.dart';
-import 'package:flutter_learn/Instagram/textField/textField.dart';
+import 'package:flutter_learn/lesson_iii/Instagram/sizedBox/sizedBox.dart';
+
+import '../Login/bottom/TextField/textField.dart';
+
 
 class InstagramApp extends StatefulWidget {
   const InstagramApp({super.key});
