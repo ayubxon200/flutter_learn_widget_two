@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learn/lesson_VII_widget_IV/instagram_posts/image_file.dart';
+
+import 'image_file.dart';
 
 class InstagramPosts extends StatefulWidget {
   const InstagramPosts({super.key});

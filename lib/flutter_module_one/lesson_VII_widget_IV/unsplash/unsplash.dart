@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learn/lesson_VII_widget_IV/unsplash/image.dart';
-import 'package:flutter_learn/lesson_VII_widget_IV/unsplash/search_button.dart';
+import 'package:flutter_learn/flutter_module_one/lesson_VII_widget_IV/unsplash/search_button.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+
+import 'image.dart';
 
 class Unsplash extends StatefulWidget {
   const Unsplash({super.key});
@@ -90,28 +91,3 @@ class _UnsplashState extends State<Unsplash> {
     );
   }
 }
-
-/*
-GridView.custom(
-          gridDelegate: SliverQuiltedGridDelegate(
-            mainAxisSpacing: 8,
-            crossAxisSpacing: 8,
-
-            crossAxisCount: 2,
-            pattern: [
-              QuiltedGridTile(2, 1),
-              QuiltedGridTile(1, 1),
-              QuiltedGridTile(2, 1),
-              QuiltedGridTile(1, 1),
-              QuiltedGridTile(1, 1),
-              QuiltedGridTile(1, 1),
-            ],
-          ),
-          childrenDelegate: SliverChildBuilderDelegate(
-              (context, index) {
-                return ImageUnsplash(image: AssetImage(imageUrl[index],),);
-              },
-              childCount: imageUrl.length,
-          ),
-          ),
-*/

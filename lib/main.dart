@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learn/lesson_VII_widget_IV/book_junction/book_junction.dart';
-import 'package:flutter_learn/lesson_VII_widget_IV/currency_conventor/currency.dart';
-import 'package:flutter_learn/lesson_VII_widget_IV/instagram_posts/instagram_posts.dart';
-import 'package:flutter_learn/lesson_VII_widget_IV/unsplash/unsplash.dart';
+import 'package:flutter_learn/flutter_module_one/lesson_iii/lesson_VII/navigator_one/navigator_one.dart';
 
-void main() => runApp(Currency());
+void main() {
+  runApp(
+    MaterialApp(
+      home: NavigatorOne(),
+    ),
+  );
+}
