@@ -1,5 +1,5 @@
   import 'package:flutter/material.dart';
-  import 'package:flutter_learn/flutter_module_one/lesson_iii/lesson_VII/navigator_one/taps/tap_one.dart';
+  import 'package:flutter_learn/flutter_module_one/lesson_VII/navigator_one/taps/tap_one.dart';
   
   class NavigatorOne extends StatefulWidget {
     const NavigatorOne({super.key});

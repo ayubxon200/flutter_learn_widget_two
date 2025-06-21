@@ -1,33 +1,35 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learn/flutter_module_one/lesson_iii/lesson_VII/navigator_one/taps/tap_four.dart';
+import 'package:flutter_learn/flutter_module_one/lesson_VII/navigator_one/taps/tap_two.dart';
 
-class TapThree extends StatelessWidget {
-  const TapThree({super.key});
+class TapOne extends StatelessWidget {
+  const TapOne({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blue,
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Expanded(
             child: Align(
               alignment: Alignment.center,
               child: Text(
-                "Access benefits",
+                "Enjoy a seamless experience",
                 style: TextStyle(fontSize: 35, color: Colors.white),
+                textAlign: TextAlign.center,
               ),
             ),
           ),
+
           Container(
-            alignment: Alignment.bottomCenter,
             margin: EdgeInsets.only(bottom: 70),
+            alignment: Alignment.bottomCenter,
             child: ElevatedButton(
               onPressed: () {
                 Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
-                  return TapFour();
+                  return TapTwo();
                 }));
               },
               style: ElevatedButton.styleFrom(

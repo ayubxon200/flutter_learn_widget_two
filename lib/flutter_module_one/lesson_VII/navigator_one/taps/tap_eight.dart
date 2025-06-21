@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learn/flutter_module_one/lesson_iii/lesson_VII/navigator_one/taps/tap_eight.dart';
+import 'package:flutter_learn/flutter_module_one/lesson_VII/navigator_one/taps/tap_nine.dart';
 
-class TapSeven extends StatefulWidget {
-  const TapSeven({super.key});
+class TapEight extends StatefulWidget {
+  final String passwordOne;
+  final String passwordTwo;
+  const TapEight({required this.passwordOne, required this.passwordTwo, super.key});
 
   @override
-  State<TapSeven> createState() => _TapSevenState();
+  State<TapEight> createState() => _TapEightState();
 }
 
-class _TapSevenState extends State<TapSeven> {
+class _TapEightState extends State<TapEight> {
 
   final TextEditingController _controllerOne = TextEditingController();
   final TextEditingController _controllerTwo = TextEditingController();
@@ -16,6 +18,8 @@ class _TapSevenState extends State<TapSeven> {
   @override
   void initState() {
     super.initState();
+    _controllerOne.text = widget.passwordOne;
+    _controllerTwo.text = widget.passwordTwo;
   }
 
   @override
@@ -24,7 +28,6 @@ class _TapSevenState extends State<TapSeven> {
     _controllerTwo.dispose();
     super.dispose();
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -35,16 +38,10 @@ class _TapSevenState extends State<TapSeven> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            GestureDetector(
-              onTap: () {
-                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
-                  return TapEight(passwordOne: _controllerOne.text, passwordTwo: _controllerTwo.text);
-                }));
-              },
-              child: Text(
-                "Password",
-                style: TextStyle(fontSize: 20, color: Colors.white),
-              ),
+            Spacer(),
+            Text(
+              "Password",
+              style: TextStyle(fontSize: 20, color: Colors.white),
             ),
 
             SizedBox(height: 10,),
@@ -53,8 +50,8 @@ class _TapSevenState extends State<TapSeven> {
               width: 200,
               height: 45,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(25),
-                color: Colors.white
+                  borderRadius: BorderRadius.circular(25),
+                  color: Colors.white
               ),
               padding: EdgeInsets.symmetric(horizontal: 16),
               alignment: Alignment.center,
@@ -89,22 +86,20 @@ class _TapSevenState extends State<TapSeven> {
               ),
             ),
 
-            SizedBox(height: 150,),
-
-            Align(
-              alignment: Alignment.bottomCenter,
+            Spacer(),
+            SafeArea(
               child: ElevatedButton(
-                  onPressed: () {
-                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
-                      return TapEight(passwordOne: _controllerOne.text, passwordTwo: _controllerTwo.text);
-                    }));
-                  },
-                  style: ElevatedButton.styleFrom(
-                    padding: EdgeInsets.symmetric(horizontal: 40, vertical: 15),
-                    backgroundColor: Colors.black,
-                  ),
-                  child: Text("Next", style: TextStyle(fontSize: 20, color: Colors.white),),
+                onPressed: () {
+                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
+                    return TapNine();
+                  }));
+                },
+                style: ElevatedButton.styleFrom(
+                  padding: EdgeInsets.symmetric(horizontal: 60, vertical: 15),
+                  backgroundColor: Colors.green,
                 ),
+                child: Text("Done", style: TextStyle(fontSize: 25, color: Colors.white),),
+              ),
             ),
           ],
         ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learn/flutter_module_one/lesson_iii/lesson_VII/navigator_one/taps/tap_five.dart';
+import 'package:flutter_learn/flutter_module_one/lesson_VII/navigator_one/taps/tap_five.dart';
 
 class TapFour extends StatelessWidget {
   const TapFour({super.key});

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learn/flutter_module_one/lesson_iii/lesson_VII/navigator_one/navigator_one.dart';
+import 'package:flutter_learn/flutter_module_one/lesson_VII/logo/logo.dart';
+import 'package:flutter_learn/flutter_module_one/lesson_VII/shoes/shoes.dart';
 
 void main() {
   runApp(
     MaterialApp(
-      home: NavigatorOne(),
+      home: Logo(),
     ),
   );
 }

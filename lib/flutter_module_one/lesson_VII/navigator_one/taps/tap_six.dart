@@ -1,20 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learn/flutter_module_one/lesson_iii/lesson_VII/navigator_one/taps/tap_six.dart';
+import 'package:flutter_learn/flutter_module_one/lesson_VII/navigator_one/taps/tap_seven.dart';
 
-class TapFive extends StatefulWidget {
-  const TapFive({super.key});
+class TapSix extends StatefulWidget {
+  final String userName;
+  const TapSix({required this.userName, super.key});
 
   @override
-  State<TapFive> createState() => _TapFiveState();
+  State<TapSix> createState() => _TapSixState();
 }
 
-class _TapFiveState extends State<TapFive> {
+class _TapSixState extends State<TapSix> {
 
   final TextEditingController _controller = TextEditingController();
 
   @override
   void initState() {
     super.initState();
+    _controller.text = widget.userName;
   }
 
   @override
@@ -32,11 +34,11 @@ class _TapFiveState extends State<TapFive> {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-             Text(
+            Text(
               "Username",
               style: TextStyle(fontSize: 20, color: Colors.white),
-                         ),
-             SizedBox(height: 10),
+            ),
+            SizedBox(height: 10),
 
             // TextField
             Container(
@@ -61,14 +63,14 @@ class _TapFiveState extends State<TapFive> {
             ElevatedButton(
               onPressed: () {
                 Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
-                  return TapSix(userName: _controller.text);
+                  return TapSeven();
                 }));
               },
               style: ElevatedButton.styleFrom(
                 padding: EdgeInsets.symmetric(horizontal: 40, vertical: 15),
                 backgroundColor: Colors.black,
               ),
-              child: Text("Next", style: TextStyle(fontSize: 20, color: Colors.white),),
+              child: Text("Register", style: TextStyle(fontSize: 20, color: Colors.white),),
             ),
           ],
         ),
