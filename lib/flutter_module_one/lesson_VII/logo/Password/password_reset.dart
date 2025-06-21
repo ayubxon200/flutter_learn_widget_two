@@ -57,6 +57,8 @@ class PasswordReset extends StatelessWidget {
               ),
             ),
 
+            SizedBox(height: 10,),
+
             Align(
               alignment: Alignment.centerRight,
               child: Container(
