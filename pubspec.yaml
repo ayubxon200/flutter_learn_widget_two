@@ -34,6 +34,7 @@ dependencies:
   eva_icons_flutter: ^3.1.0
   flag: ^7.0.0
   flutter_staggered_grid_view: ^0.7.0
+  font_awesome_flutter: ^10.7.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -66,3 +67,4 @@ flutter:
     - assets/images/instagram_posts_images/
     - assets/images/unsplash_images/
     - assets/images/moduleOneLessonEightImages/
+    - assets/images/qrcodes/
