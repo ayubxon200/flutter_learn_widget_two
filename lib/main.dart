@@ -7,5 +7,10 @@ import 'package:flutter_learn/flutter_module_one/lesson_nine_basic_widgets_five/
 // import 'package:flutter_learn/flutter_module_one/lesson_nine_basic_widgets_five/drawer/drawer.dart';
 import 'package:flutter_learn/flutter_module_one/lesson_nine_basic_widgets_five/drawer_two/drawer_app.dart';
 import 'package:flutter_learn/flutter_module_one/lesson_nine_basic_widgets_five/navigation/navigation_app.dart';
+import 'package:flutter_learn/flutter_module_one/lesson_nine_basic_widgets_five/navigation_bar/navigation_bar.dart';
+import 'package:flutter_learn/flutter_module_one/lesson_nine_basic_widgets_five/navigation_bar/navigation_five.dart';
+import 'package:flutter_learn/flutter_module_one/lesson_nine_basic_widgets_five/navigation_bar/navigation_four.dart';
+import 'package:flutter_learn/flutter_module_one/lesson_nine_basic_widgets_five/navigation_bar/navigation_six.dart';
+import 'package:flutter_learn/flutter_module_one/lesson_nine_basic_widgets_five/navigation_bar/navigation_three.dart';
 
-void main() => runApp(MaterialApp(home: ContrastPageTwo()));
+void main() => runApp(MaterialApp(home: NavigationSix()));
